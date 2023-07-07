@@ -1,3 +1,87 @@
-.App {
+@import '@fontsource/roboto' ;
+
+body {
+  background-image: url('./images/background.png');
+  font-family: Roboto , sans-serif;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  color: #f2f2f2;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.title {
+  align-items: center;
+  border: 5px solid #f2f2f2;
+  border-radius: 20px;
+  display: flex;
+  font-size: 2em;
+  height: 10vh;
+  justify-content: center;
+  width: 60vw;
+  margin: 7vw;
+}
+
+* [ id = 'solar-system' ] {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+* [ id = 'planets' ], [ id = 'missions' ] {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.planet-card img {
+  width: 12vw;
+}
+
+.planet-card {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1em;
+  justify-content: center;
+}
+
+* [ id = 'missions-cards' ] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 7vw;
+}
+
+.mission-card {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1em;
+  justify-content: center;
+  margin: 5vw;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 12vw;
+  border: 2px solid #f2f2f2;
+  box-sizing: border-box;
   text-align: center;
+}
+
+.mission-name {
+  font-weight: 900;
 }
